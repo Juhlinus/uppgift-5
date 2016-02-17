@@ -1,0 +1,13 @@
+﻿@model IEnumerable<PersonalWebsite.Models.Author>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <br />
+    <img src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12400825_906491089467450_4210026908581058115_n.jpg?oh=76f07eed53c9c87fee8ffafb5a87f4c7&oe=576FB643" height="500"/>
+    <h1>@Html.DisplayFor(model => model.First().Name)</h1>
+    <p>Born on @Html.DisplayFor(model => model.First().Birthday) (@Html.DisplayFor(model => model.First().Age) years old)</p>
+    <p>My current occupation is @Html.DisplayFor(model => model.First().Occupation).</p>
+</div>
